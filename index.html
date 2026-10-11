@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ShopZone — an Amazon-inspired shopping homepage built with HTML and CSS.">
+  <title>ShopZone India | Online Shopping</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="announcement">The Great Everyday Sale is here <span>·</span> Extra savings on handpicked favourites</div>
+  <header class="site-header">
+    <div class="header-main">
+      <a class="brand" href="#" aria-label="ShopZone home"><span class="brand-name">shop<span>zone</span></span><span class="brand-country">.in</span></a>
+      <a class="deliver" href="#delivery"><span class="deliver-pin">⌖</span><span><small>Deliver to Kolkata 700001</small><strong>Update location</strong></span></a>
+      <form class="search-bar" action="#products">
+        <label class="sr-only" for="search-category">Choose category</label>
+        <select id="search-category" name="category"><option>All</option><option>Electronics</option><option>Fashion</option><option>Home</option><option>Books</option></select>
+        <label class="sr-only" for="search">Search ShopZone</label>
+        <input id="search" type="search" placeholder="Search ShopZone.in">
+        <button type="submit" aria-label="Search">⌕</button>
+      </form>
+      <a class="header-option language" href="#language"><span>🇮🇳</span><strong>EN⌄</strong></a>
+      <a class="header-option account" href="#account"><small>Hello, sign in</small><strong>Account &amp; Lists⌄</strong></a>
+      <a class="header-option returns" href="#orders"><small>Returns</small><strong>&amp; Orders</strong></a>
+      <a class="header-cart" href="#cart"><span class="cart-symbol">🛒</span><span class="cart-count">0</span><strong>Cart</strong></a>
+    </div>
+    <nav class="primary-nav" aria-label="Main navigation">
+      <a class="nav-all" href="#categories">☰ All</a>
+      <a href="#deals">Today's Deals</a><a href="#bestsellers">Best Sellers</a><a href="#electronics">Mobiles &amp; Electronics</a><a href="#fashion">Fashion</a><a href="#home">Home &amp; Kitchen</a><a href="#books">Books</a><a href="#customer-service">Customer Service</a><a href="#sell">Sell</a>
+      <span class="nav-promo">SHOP SMART. LIVE BETTER.</span>
+    </nav>
+    <div class="secondary-nav"><a href="#fresh">Fresh finds</a><a href="#new">New arrivals</a><a href="#student">Student essentials</a><a href="#under499">Under ₹499</a><a href="#gift">Gift ideas</a><a href="#prime">Fast delivery picks</a></div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Featured sale">
+      <div class="hero-copy">
+        <div class="hero-kicker"><span class="kicker-line"></span> THE EVERYDAY UPGRADE EVENT</div>
+        <h1>Good finds.<br><em>Great feeling.</em></h1>
+        <p>Smart tech, everyday essentials, and thoughtful little upgrades — all in one place.</p>
+        <a class="hero-button" href="#deals">Explore today's deals <span>↗</span></a>
+        <div class="hero-proof"><span class="proof-dot"></span> Curated picks for your everyday</div>
+      </div>
+      <div class="hero-scene" aria-hidden="true">
+        <div class="scene-sun"></div><div class="scene-orbit"></div>
+        <div class="scene-platform platform-back"></div><div class="scene-platform platform-front"></div>
+        <div class="hero-box"><div class="box-ribbon"></div><div class="box-mark">SZ<span>.</span></div></div>
+        <div class="scene-card scene-card-one"><span>✦</span><small>GOOD<br>CHOICES</small></div>
+        <div class="scene-card scene-card-two"><span>↗</span><small>JUST<br>ARRIVED</small></div>
+        <div class="scene-spark spark-one">✳</div><div class="scene-spark spark-two">✦</div>
+      </div>
+      <div class="hero-slide-label"><span>01</span><i></i><span>03</span></div>
+    </section>
+
+    <section class="category-strip" id="categories" aria-label="Shop by category">
+      <a class="category-item" href="#electronics"><span class="category-icon icon-electronics">⌁</span><strong>Electronics</strong><small>Tech that clicks</small></a>
+      <a class="category-item" href="#fashion"><span class="category-icon icon-fashion">✦</span><strong>Fashion</strong><small>Find your style</small></a>
+      <a class="category-item" href="#home"><span class="category-icon icon-home">⌂</span><strong>Home &amp; Living</strong><small>Make room for joy</small></a>
+      <a class="category-item" href="#beauty"><span class="category-icon icon-beauty">❀</span><strong>Beauty</strong><small>Your daily ritual</small></a>
+      <a class="category-item" href="#sports"><span class="category-icon icon-sports">◉</span><strong>Sports</strong><small>Move your way</small></a>
+      <a class="category-item" href="#books"><span class="category-icon icon-books">▤</span><strong>Books</strong><small>Turn a page</small></a>
+      <a class="category-item" href="#deals"><span class="category-icon icon-deals">%</span><strong>Top deals</strong><small>Worth a look</small></a>
+    </section>
+
+    <section class="service-row" id="delivery">
+      <div class="service-item"><span class="service-icon">↗</span><div><strong>Fast, free delivery</strong><small>On eligible orders</small></div></div>
+      <div class="service-item"><span class="service-icon">◇</span><div><strong>Easy returns</strong><small>Shop with confidence</small></div></div>
+      <div class="service-item"><span class="service-icon">✓</span><div><strong>Handpicked finds</strong><small>Useful, everyday picks</small></div></div>
+      <div class="service-item"><span class="service-icon">♡</span><div><strong>Made for you</strong><small>Discover something new</small></div></div>
+    </section>
+
+    <section class="deal-banner" id="deals">
+      <div class="deal-banner-copy"><span class="eyebrow">THE DEALS EDIT · LIMITED-TIME LOOK</span><h2>Little upgrades.<br><em>Lovely prices.</em></h2><p>Discover standout picks for work, weekends, and everything in between.</p><a href="#products" class="dark-button">Shop the edit <span>→</span></a></div>
+      <div class="deal-banner-art" aria-hidden="true"><div class="deal-circle"></div><div class="deal-tile tile-one">SAVE<br><b>30%</b></div><div class="deal-tile tile-two">GOOD<br>FINDS ✦</div><div class="deal-cube"></div></div>
+      <div class="banner-stamp">DEALS<br><b>INSIDE</b></div>
+    </section>
+
+    <section class="shopping-section" id="products">
+      <div class="section-head"><div><span class="eyebrow">TRENDING RIGHT NOW</span><h2>Today's top deals</h2><p>Everyday favourites, with prices worth a second look.</p></div><a class="section-link" href="#bestsellers">See all deals <span>→</span></a></div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="product-image image-headphones" href="#headphones" aria-label="Studio wireless headphones"><span class="deal-pill">-35%</span><span class="wishlist">♡</span><div class="product-visual visual-headphones"><i></i><b></b></div><span class="image-caption">SOUND, YOUR WAY</span></a>
+          <div class="product-details"><span class="product-type">AUDIO · WIRELESS</span><h3><a href="#headphones">Studio wireless headphones</a></h3><div class="rating"><span>★★★★<i>★</i></span><small>2,418</small></div><div class="price-line"><strong>₹1,949</strong><del>₹2,999</del><span class="deal-label">Deal</span></div><p class="delivery-line"><b>FREE delivery</b> tomorrow</p><a class="add-button" href="#cart">Add to cart <span>＋</span></a></div>
+        </article>
+        <article class="product-card">
+          <a class="product-image image-watch" href="#watch" aria-label="Active smart watch"><span class="deal-pill">-28%</span><span class="wishlist">♡</span><div class="product-visual visual-watch"><div class="watch-strap"></div><div class="watch-face"><span>10:09</span><i>◌</i></div></div><span class="image-caption">MOVE WITH PURPOSE</span></a>
+          <div class="product-details"><span class="product-type">WEARABLE TECH</span><h3><a href="#watch">Active smart watch</a></h3><div class="rating"><span>★★★★★</span><small>986</small></div><div class="price-line"><strong>₹2,499</strong><del>₹3,499</del><span class="deal-label">Deal</span></div><p class="delivery-line"><b>FREE delivery</b> tomorrow</p><a class="add-button" href="#cart">Add to cart <span>＋</span></a></div>
+        </article>
+        <article class="product-card">
+          <a class="product-image image-sneakers" href="#sneakers" aria-label="Classic everyday sneakers"><span class="deal-pill">-40%</span><span class="wishlist">♡</span><div class="product-visual visual-sneakers"><div class="shoe-shape"><i></i><b></b></div></div><span class="image-caption">STEP OUT IN STYLE</span></a>
+          <div class="product-details"><span class="product-type">EVERYDAY STYLE</span><h3><a href="#sneakers">Classic everyday sneakers</a></h3><div class="rating"><span>★★★★<i>★</i></span><small>1,203</small></div><div class="price-line"><strong>₹1,799</strong><del>₹2,999</del><span class="deal-label">Deal</span></div><p class="delivery-line"><b>FREE delivery</b> in 2 days</p><a class="add-button" href="#cart">Add to cart <span>＋</span></a></div>
+        </article>
+        <article class="product-card">
+          <a class="product-image image-speaker" href="#speaker" aria-label="Portable Bluetooth speaker"><span class="deal-pill">-25%</span><span class="wishlist">♡</span><div class="product-visual visual-speaker"><i></i><b></b><span></span></div><span class="image-caption">TAKE THE BEAT ALONG</span></a>
+          <div class="product-details"><span class="product-type">SOUND · PORTABLE</span><h3><a href="#speaker">Portable Bluetooth speaker</a></h3><div class="rating"><span>★★★★<i>★</i></span><small>754</small></div><div class="price-line"><strong>₹1,499</strong><del>₹1,999</del><span class="deal-label">Deal</span></div><p class="delivery-line"><b>FREE delivery</b> tomorrow</p><a class="add-button" href="#cart">Add to cart <span>＋</span></a></div></div>
+        </article>
+      </div>
+      <div class="scroll-note"><span></span> CURATED FOR YOUR EVERYDAY <span></span></div>
+    </section>
+
+    <section class="category-cards" id="bestsellers">
+      <div class="section-head"><div><span class="eyebrow">A GOOD PLACE TO START</span><h2>Explore your next favourite</h2></div><a class="section-link" href="#categories">Browse categories <span>→</span></a></div>
+      <div class="category-card-grid">
+        <a class="big-category cat-tech" id="electronics" href="#products"><div class="big-category-top"><span>01 / TECH</span><span>↗</span></div><div class="category-illustration tech-illustration"><div class="phone"><i></i></div><div class="earbud earbud-one"></div><div class="earbud earbud-two"></div><div class="tech-orb"></div></div><div class="big-category-bottom"><div><h3>Smart tech, less fuss.</h3><p>Everyday electronics that just work.</p></div><span class="circle-arrow">↗</span></div></a>
+        <a class="big-category cat-home" id="home" href="#products"><div class="big-category-top"><span>02 / HOME</span><span>↗</span></div><div class="category-illustration home-illustration"><div class="home-arch"></div><div class="table-lamp"><i></i><b></b><span></span></div><div class="home-vase">♧</div></div><div class="big-category-bottom"><div><h3>Make space for calm.</h3><p>Small details, warmer spaces.</p></div><span class="circle-arrow">↗</span></div></a>
+        <a class="big-category cat-style" id="fashion" href="#products"><div class="big-category-top"><span>03 / STYLE</span><span>↗</span></div><div class="category-illustration style-illustration"><div class="style-bag"><i></i></div><div class="style-sun"></div><div class="style-star">✳</div></div><div class="big-category-bottom"><div><h3>Wear what feels right.</h3><p>Easy pieces, personal style.</p></div><span class="circle-arrow">↗</span></div></a>
+      </div>
+    </section>
+
+    <section class="split-feature" id="student">
+      <div class="split-feature-copy"><span class="eyebrow">THE STUDENT ESSENTIALS EDIT</span><h2>Big plans.<br><em>Smart basics.</em></h2><p>From study sessions to side projects, find useful gear for your next big idea.</p><a class="outline-button" href="#products">Explore essentials <span>→</span></a><div class="feature-footnote"><span>✦</span> Curated for busy days and late-night ideas</div></div>
+      <div class="split-feature-art" aria-hidden="true"><div class="feature-sun"></div><div class="notebook"><div class="notebook-lines"></div><span>MAKE<br>IT<br>HAPPEN.</span></div><div class="pencil"></div><div class="coffee-cup"><i></i><b></b></div><div class="feature-sticker">IDEAS<br>WELCOME</div></div>
+    </section>
+
+    <section class="under-section" id="under499">
+      <div class="under-intro"><span class="eyebrow">GOOD FINDS, SMALL PRICES</span><h2>Little things<br>under <em>₹499.</em></h2><p>Small upgrades can still make a big difference.</p><a href="#products" class="section-link">Explore under ₹499 →</a></div>
+      <a class="under-card under-one" href="#products"><span class="under-art art-book">▤</span><strong>Desk &amp; study</strong><small>From ₹149</small></a>
+      <a class="under-card under-two" href="#products"><span class="under-art art-mug">◡</span><strong>Daily essentials</strong><small>From ₹199</small></a>
+      <a class="under-card under-three" href="#products"><span class="under-art art-bottle">♧</span><strong>On the go</strong><small>From ₹249</small></a>
+      <a class="under-card under-four" href="#products"><span class="under-art art-lamp">✦</span><strong>Room refresh</strong><small>From ₹299</small></a>
+    </section>
+
+    <section class="newsletter" id="account">
+      <div class="newsletter-icon">✳</div><div class="newsletter-copy"><span class="eyebrow">THE GOOD FINDS LETTER</span><h2>A little inspiration goes a long way.</h2><p>New arrivals, useful picks, and deal highlights — occasionally, not constantly.</p></div>
+      <form class="newsletter-form" action="#newsletter"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Your email address"><button type="submit">Count me in ↗</button><small>Demo form only. No emails are collected.</small></form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="back-to-top" href="#">Back to top <span>↑</span></a>
+    <div class="footer-main">
+      <div class="footer-brand-column"><a class="brand footer-brand" href="#"><span class="brand-name">shop<span>zone</span></span><span class="brand-country">.in</span></a><p>Good finds for everyday life.</p><div class="footer-badges"><span>IN</span><span>English ⌄</span><span>₹ INR</span></div></div>
+      <div class="footer-column"><h3>Get to know us</h3><a href="#about">About ShopZone</a><a href="#careers">Careers</a><a href="#press">Press releases</a><a href="#sustainability">Sustainability</a></div>
+      <div class="footer-column" id="sell"><h3>Sell with us</h3><a href="#sell">Start selling</a><a href="#affiliate">Affiliate programme</a><a href="#advertise">Advertise products</a><a href="#seller-help">Seller help</a></div>
+      <div class="footer-column" id="customer-service"><h3>Let us help you</h3><a href="#account">Your account</a><a href="#orders">Your orders</a><a href="#returns">Returns centre</a><a href="#help">Help centre</a></div>
+    </div>
+    <div class="footer-bottom"><a class="brand footer-mini-brand" href="#"><span class="brand-name">shop<span>zone</span></span><span class="brand-country">.in</span></a><p>Student project · Built with HTML &amp; CSS · Not affiliated with Amazon.</p><small>© 2026 ShopZone. All rights reserved.</small></div>
+  </footer>
+</body>
+</html>
